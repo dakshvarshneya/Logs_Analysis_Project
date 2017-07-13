@@ -1,13 +1,15 @@
 # Logs Analysis Project
 
-### About the logs analysis project
+## About the logs analysis project
+
 You've been hired onto a team working on a newspaper site. The user-facing newspaper site frontend itself, and the database behind it, are already built and running. You've been asked to build an internal reporting tool that will use information from the database to discover what kind of articles the site's readers like.
 
 The database contains newspaper articles, as well as the web server log for the site. The log has a database row for each time a reader loaded a web page. Using that information, your code will answer questions about the site's user activity.
 
 The program you write in this project will run from the command line. It won't take any input from the user. Instead, it will connect to that database, use SQL queries to analyze the log data, and print out the answers to some questions.
 
-### Basic skills required :
+## Basic skills required :
+
 Completing this project will exercise your database skills. Here are some portions of the Relational Databases course that you might want to review:
 
 * Joining tables
@@ -16,7 +18,8 @@ Completing this project will exercise your database skills. Here are some portio
 * Writing code with DB-API
 * Views
 
-### The PostgreSQL documentation
+## The PostgreSQL documentation
+
 In this project, you'll be using a PostgreSQL database. If you'd like to know a lot more about the kinds of queries that you can use in this dialect of SQL, check out the PostgreSQL documentation. It's a lot of detail, but it spells out all the many things the database can do.
 
 Here are some parts that may be particularly useful to refer to:
@@ -25,7 +28,8 @@ Here are some parts that may be particularly useful to refer to:
 * Aggregate functions
 
 
-### Questions
+## Questions
+
 1. What are the most popular three articles of all time?
   Which articles have been accessed the most?
   Present this information as a sorted list with the most popular article at the top
@@ -35,7 +39,7 @@ Here are some parts that may be particularly useful to refer to:
 3. On which days did more than 1% of requests lead to errors?
   The log table includes a column status that indicates the HTTP status code that the news site sent to the user's browser.
   
- ### Installation
+## Installation
 
 Download vagrant https://www.vagrantup.com/
 
