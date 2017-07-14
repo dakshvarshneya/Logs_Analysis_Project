@@ -51,6 +51,8 @@ Download python https://www.python.org/downloads/
 
 Clone the Udacity https://github.com/udacity/fullstack-nanodegree-vm
 
+Clone the LogsAnalysisProject https://github.com/dakshvarshneya/Logs_Analysis_Project.git
+
 Cd from gitbash to vagrant directory 
 
 Type "vagrant up"
