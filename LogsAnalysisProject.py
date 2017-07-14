@@ -24,8 +24,7 @@ question2 = """
     WHERE authors.id = articles.author
     AND log.path = CONCAT('/article/', articles.slug)
     GROUP BY authors.name
-    ORDER BY views
-    DESC LIMIT 4;"""
+    ORDER BY views;"""
 
 question3 = """
     SELECT date, ROUND((visits.error * 1.0/logs)*100, 2)
@@ -42,7 +41,7 @@ def popular_article():
     db = psycopg2.connect(database=DBNAME)
     c = db.cursor()
     c.execute(question1)
-    print "\n" + "Three most popular articles of all time:" + "\n" + "-" * 50 + "\n"
+    print "\n" + "3 most popular articles of all time:" + "\n" + "-" * 50
     for content in c:
         print(' ' + content[0] + '- ' + str(content[1]) + " views")
     db.close()
@@ -53,7 +52,7 @@ def popular_author():
     db = psycopg2.connect(database=DBNAME)
     c = db.cursor()
     c.execute(question2)
-    print "\n" + "Four most popular article authors of all time:" + "\n" + "-" * 50 + "\n"
+    print "\n" + "Most popular article authors of all time:" + "\n" + "-" * 50
     for content in c:
         print(' ' + content[0] + '- ' + str(content[1]) + " views")
     db.close()
@@ -63,7 +62,7 @@ def error():
     db = psycopg2.connect(database=DBNAME)
     c = db.cursor()
     c.execute(question3)
-    print "\n" + "Days with more than 1 percent of errors:" + "\n" + "-" * 50 + "\n"
+    print "\n" + "Days with more than 1% of errors:" + "\n" + "-" * 50
     for content in c:
         print('    ' + str(content[0]) + ' - ' + str(content[1]) + '% ' +
               'errors')
