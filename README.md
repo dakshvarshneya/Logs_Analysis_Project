@@ -41,25 +41,32 @@ Here are some parts that may be particularly useful to refer to:
   
 ## Installation
 
-Download vagrant https://www.vagrantup.com/
+* Download vagrant https://www.vagrantup.com/
 
-Download VirtualBox https://www.virtualbox.org/wiki/Downloads
+* Download VirtualBox https://www.virtualbox.org/wiki/Downloads
 
-Download python https://www.python.org/downloads/
+* Download python https://www.python.org/downloads/
 
 ## How to run
 
-Clone the Udacity https://github.com/udacity/fullstack-nanodegree-vm
+* Clone the Udacity https://github.com/udacity/fullstack-nanodegree-vm
 
-Clone the LogsAnalysisProject https://github.com/dakshvarshneya/Logs_Analysis_Project.git
+* Clone or download the LogsAnalysisProject https://github.com/dakshvarshneya/Logs_Analysis_Project.git
 
-Cd from gitbash to vagrant directory 
+* Move LogsAnalysisProject.py and newsdata.sql into the vagrant directory
 
-Type "vagrant up"
+* Cd from gitbash to vagrant directory 
 
-Type "vagrant ssh"
+* Type "vagrant up"
 
-Type "python LogAnalysisProject.py" to launch program
+* Type "vagrant ssh"
+
+* Load the data onto the database
+```sql
+psql -d news -f newsdata.sql
+```
+
+* Type "python LogAnalysisProject.py" to launch program
 
 
 ## LICENSE
